@@ -90,7 +90,7 @@
       <h2>Comment modéliser le plus simplement possible une transmission d'idéaux politiques au sein d'une population ?</h2>
       <ul>
       <li>Les moyens de partager son avis politique et d’influer sur celui des autres sont nombreux.</li>
-      <li>À l’aide d’une documentation riche et fiable nous avons mis au point une variante d’un modèle déjà existant.</li>
+      <li>Après une étape de recherches et de constitution de bibliographie, j'ai adapté un modèle déjà existant (modèle d'assimilation / contraste) à notre cas</li>
       
 	</ul>
     </section>
@@ -101,7 +101,7 @@
       <ul>
       <li>Sa formule de base étant, si op1 est suffisamment proche de op2 : Op1 (t+1) += (Op2(t) - Op1(t)) * (1 - dist(Op1, Op2) * C</li>
       <li>Avec Op1, Op2 deux nombres flottants compris entre 0 et 10, dist la distance entre Op1, Op2 et C une constante arbitraire fixée par l’utilisateur.</li>
-      <li>Notre formule à nous : Op1 (t+1) += (Op2(t) - Op1(t)) * (2*dist - ((dist^2)/5))/50000</li>
+      <li>La formule retenue : Op1 (t+1) += (Op2(t) - Op1(t)) * (2*dist - ((dist^2)/5))/50000</li>
 	  <li>Unité de temps : semaine</li>
     </ul>
     </section>
@@ -117,11 +117,11 @@
 
     <section id="stratégies">
       <h2>Analyse des résultats</h2>
-      <img src="https://ProjetAC.github.io/images/téléchargement.png" alt="Description de l'image">
-      <img src="https://ProjetAC.github.io/images/téléchargement (1).png" alt="Description de l'image">
-      <img src="https://ProjetAC.github.io/images/téléchargement (2).png" alt="Description de l'image">
-      <img src="https://ProjetAC.github.io/images/téléchargement (3).png" alt="Description de l'image">
-      <li> Voici les graphiques de test de notre modèle. En abcisse, nous avons les opinions politiques de 0 à 10 et en ordonnée le nombre de personnes ayant ces opinions. Les graphiques au dessus représentent systématiquement l'univers de départ et celui d'en dessous celui après quelques centaines de tours. </li>
+      <img src="https://github.com/deaudro/ProjetAC/images/téléchargement.png" alt="Description de l'image">
+      <img src="https://github.com/deaudro/ProjetAC/images/téléchargement (1).png" alt="Description de l'image">
+      <img src="https://github.com/deaudro/ProjetAC/images/téléchargement (2).png" alt="Description de l'image">
+      <img src="https://github.com/deaudro/ProjetAC/images/téléchargement (3).png" alt="Description de l'image">
+      <li> Voici les graphiques de test après avoir fait tourner le modèle. En abcisse, nous avons les opinions politiques de 0 à 10 et en ordonnée le nombre de personnes ayant ces opinions. Les graphiques au dessus représentent systématiquement l'univers de départ et celui d'en dessous celui après quelques centaines de tours. </li>
       <li>  Première image : nous prenons comme paramètre de tolérance un nombre plus grand. On constate que les opinions convergent plus. </li>
       <li> Deuxième image : nous prenons un paramètre de tolérance un peu plus petit. On constate que les opinions convergent moins. Idem pour l'image 3 où le paramètre est encore plus petit.</li>
       <li> Quatrième image : Nous essayons d'effectuer des tours sur un petit nombre de personnes. Leurs opinions changent peu et restent dans le meme intervalle. </li>
